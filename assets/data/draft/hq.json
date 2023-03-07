@@ -9,7 +9,7 @@
     "name":"GTX Colombo",
     "phone":"22222",
     "address":"location2",
-    "email":"colombo.@gtx.com"
+    "email":"colombo.VeryLongEmailAddressTest@gtx.com"
     },
     {"key_id":"3",
     "name":"GTX Mumbai",
