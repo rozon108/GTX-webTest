@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+
+/* regular 400 light 300 */
+:root {
+  --primary-color: #4163DA;
+  --background-color: #ffffff;
+  --secondary-color: #5EC5FF;
+  --secondary-dark-color: #1f3daa;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* change font to required one */
+  font-family: 'Poppins', 'Calibri';
+  background: var(--background-color);
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  font-weight: 300;
+  overflow-wrap: break-word;
+}
+
+.regular400 {
+  font-weight: 400;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #242424;
+  mix-blend-mode: overlay;
+}
+
+section {
+  padding-block-end: 1rem;
+}
+
+/* Start of custom CSS Style */
+/* HEADER */
+
+
+/* Nav Bar */
+#navbar {
+  background-color: #00000010;
+  position: fixed;
+  /* Make it stick/fixed */
+  top: 0;
+  /* Stay on top */
+  width: 100%;
+  /* Full width */
+  transition: top 0.3s;
+  /* Transition effect when sliding down (and up) */
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+nav img {
+  height: 3rem;
+}
+
+.nav-dropdown {
+  display: none !important;
+  margin: 1rem;
+}
+
+.nav_title {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav_title li {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.nav_list--active {
+  color: var(--secondary-color);
+}
+
+.highlighted {
+  color: var(--secondary-dark-color);
+  text-decoration: underline;
+
+}
+
+/* End of Nav Bar */
+
+
+/* Home Section */
+#Showcase {
+  /* Idea is to play a video in background
+  But there might be issue in smaller devices */
+  height: 100vh;
+}
+
+#Showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+  z-index: -1;
+
+}
+
+#ContactUs {
+  height: 200vh;
+}
+
+/* OUR BRANDS Section */
+/* all the classes in order #OurBrands .brand-container-wrapper .brand-container brandlogo-wrapper .ourBrandLogo */
+#OurBrands {
+  text-align: center;
+}
+
+.brand-container-wrapper {
+  gap: 2rem;
+
+}
+
+.brandlogo-wrapper {
+  height: 75px;
+  width: auto;
+
+}
+
+.ourBrandLogo {
+  height: inherit;
+}
+
+
+/* End of our brand section */
+
+/* Testimonials */
+#testimonials {
+  background-color: var(--secondary-color);
+
+  color: white;
+}
+
+.container-testimonials {
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 3 rem;
+  line-height: 1.5;
+}
+
+.img-testimonials {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+div#testimonials-carousel-container {
+  padding: 2% 5%;
+}
+
+/* End of Testimonials */
+
+/* Contact US / HQ */
+
+#ContactUs {
+
+  width: 98%;
+  margin: auto;
+
+}
+
+.HQ {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
+  counter-reset: grid-items;
+
+
+}
+
+.map,
+.hq1,
+.hq2,
+.hq3,
+.hq4 {
+  counter-increment: grid-item;
+}
+
+
+.map {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.hq1 {
+
+  grid-column: 1/3;
+  grid-row: 1;
+  padding: 2rem 0 0 3rem;
+}
+
+.hq2,
+.hq3,
+.hq4 {
+ 
+}
+
+.hq-container{
+display: flex;
+flex-direction: column;
+
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+
+}
+
+/* End of ContactUS / HQ */
+
+/* Footer */
+footer {
+  border: 4px solid red;
+  margin-bottom: 5rem;
+  background-color: var(--secondary-dark-color);
+  padding-block: 2rem;
+  padding-inline: 3rem;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+
+/* End of footer and hq */
+
+/* Responsive */
+@media (max-width: 768px) {
+  /* .nav-dropdown {
+    display: block !important;
+  } */
+
+  .nav_title {
+    display: none;
+  }
+
+  .brand-container p {
+    display: none;
+  }
+
+  .HQ{
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 1rem;
+  }
+
+  footer {
+    padding-inline: 0.5rem;
+    padding-block: 1.5rem;
+    display: grid;
+    justify-content: center
+  }
+
+  .social-media__list {
+    text-align: center;
+  }
+}
+
+/* End */
