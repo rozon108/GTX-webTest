@@ -23,27 +23,40 @@ $(function () {
     console.log('hello')
 });
 
-hqEL.innerHTML=hqData.map(x=>hqHTML(x)).join("");
-function hqHTML(info){
-    return `required data`
 
+
+
+
+
+// Sticky Navbar
+window.onscroll = function () { myFunction() };
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+console.log(navbar);
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
 }
 
 // Nav Bar animation
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-    } else {
-        document.getElementById("navbar").style.top = "-80px";
-    }
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function () {
+//     var currentScrollPos = window.pageYOffset;
+//     if (prevScrollpos > currentScrollPos) {
+//         document.getElementById("navbar").style.top = "0";
+//     } else {
+//         document.getElementById("navbar").style.top = "-80px";
+//     }
 
-    prevScrollpos = currentScrollPos;
-
-}
-
-
-
+//     prevScrollpos = currentScrollPos;
+// }
 
 // end
