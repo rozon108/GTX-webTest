@@ -4,9 +4,9 @@
 
 $(function () {
     var h1 = [];
-    var hqTarget = "../assets/data/draft/hq.json";
+    var hqTarget = "script/hq.json";
     $.getJSON(hqTarget, function (data) {
-        //    console.log(data.gtxHQ)
+           console.log(data.gtxHQ)
         $.each(data.gtxHQ, (i, hq) => {
             console.log(hq);
             var hqInfo = `<div class="hq-container hq${hq.key_id}">

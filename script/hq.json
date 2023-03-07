@@ -1,0 +1,26 @@
+{"gtxHQ":[
+    {"key_id":"1",
+    "name":"Global Travel Xperts HQ",
+    "phone":"11111",
+    "address":"location1",
+    "email":"main.@gtx.com"
+    },
+    {"key_id":"2",
+    "name":"GTX Colombo",
+    "phone":"22222",
+    "address":"location2",
+    "email":"colombo.VeryLongEmailAddressTest@gtx.com"
+    },
+    {"key_id":"3",
+    "name":"GTX Mumbai",
+    "phone":"33333",
+    "address":"location3",
+    "email":"mumbai.@gtx.com"
+    },
+    {"key_id":"4",
+    "name":"GTX Kolkata",
+    "phone":"44444",
+    "address":"location4",
+    "email":"kolkata.@gtx.com"
+    }
+]}
