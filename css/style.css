@@ -59,14 +59,7 @@ section {
 
 /* Start of custom CSS Style */
 /* HEADER */
-.gtx-Logo-header{
-  position: absolute;
-  margin: auto;
-  text-align: center;
-  top: 27%;
-  left: 41%;
-  transform: scale(2);
-}
+
 
 /* Nav Bar */
 #navbar {
@@ -94,6 +87,7 @@ nav {
   top: 0;
   width: 100%;
 }
+
 .sticky {
   padding-top: 60px;
 }
@@ -149,19 +143,24 @@ nav img {
   z-index: -1;
 
 }
-.openingHeading{
- position: absolute;
-  width:85%;
-  margin:auto;
+
+.header-content {
+  position: absolute;
+  width: 85%;
+  margin: auto;
   text-align: center;
-  top: 50%;
+  top: 42%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-#ContactUs {
-  
+.gtx-Logo-header {
+  margin-block-end: 2rem;
 }
+
+
+
+#ContactUs {}
 
 /* OUR BRANDS Section */
 /* all the classes in order #OurBrands .brand-container-wrapper .brand-container brandlogo-wrapper .ourBrandLogo */
@@ -184,11 +183,12 @@ nav img {
 .ourBrandLogo {
   height: inherit;
 }
+
 .brand-container-wrapper {
   display: inline-grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  
+
 }
 
 /* End of our brand section */
@@ -282,7 +282,7 @@ div#testimonials-carousel-container {
 
 /* Footer */
 footer {
-  
+
   margin-bottom: 5rem;
   background-color: var(--secondary-dark-color);
   padding-block: 2rem;
@@ -306,10 +306,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+
   /* .nav-dropdown {
     display: block !important;
   } */
-
+ 
   .nav_title {
     display: none;
   }
@@ -322,7 +323,7 @@ footer {
     display: inline-grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    
+
   }
 
   .HQ {
@@ -346,7 +347,8 @@ footer {
   .hq4 {
     flex: 1;
   }
-  .hq-container span{
+
+  .hq-container span {
     overflow-wrap: break-word;
   }
 
@@ -375,7 +377,8 @@ footer {
   .brand-container-wrapper {
     display: block;
   }
-  .brand-container{
+
+  .brand-container {
     margin-block-end: 0.5rem;
   }
 
