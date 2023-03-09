@@ -156,7 +156,7 @@ section {
   background-color: var(--secondary-dark-color);
   color: white;
   text-align: center;
-  padding: 0rem 3rem;
+  
 }
 
 .t-btn {
@@ -176,16 +176,16 @@ section {
   padding: 1rem 3rem;
 } */
 
-.t-img-c {
-  height:35vh
-}
 
 .testimonial-text {
-  font-size: 2.55vw;
+  font-size: 3vmin;
   text-align: justify;
 }
 .t-employee{
   font-size: 1.25rem;
+}
+.t-img-c {
+  height: 350px;
 }
 
 .img-testimonials {
@@ -195,10 +195,7 @@ section {
   object-fit: cover;
 }
 
-.cx{
-  display: flex;
-  align-content: space-evenly;
-}
+
 
 /* End of Testimonials */
 
@@ -380,6 +377,9 @@ footer {
     margin-inline: 0;
   }
 
+  .testimonial-text{
+    padding-top: 0.5rem;
+  }
 
 
 
