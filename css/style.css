@@ -195,6 +195,10 @@ section {
   object-fit: cover;
 }
 
+.cx{
+  display: flex;
+  align-content: space-evenly;
+}
 
 /* End of Testimonials */
 
