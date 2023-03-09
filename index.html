@@ -24,121 +24,182 @@
 
 
 
+  <nav class=" navbar navbar-expand-lg sticky-top navbar-light bg-white">
+    <div class="custom-nav container-fluid">
+      <div class="navbar-brand">
+        <div class="gtx-small">
+          <img src="./assets/img/Logo/gtxlogo-small.png" alt="GTX" class="gtx-Logo-small">
+        </div>
+        <img src="./assets/gtxlogo.png" alt="GTX" class="gtx-Logo ">
+      </div>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar--link navbar-nav">
+          <li class="nav-item"><a href=#>Home</a></li>
+          <li class="nav-item"><a href=#AboutUs>About Us</a> </li>
+          <li class="nav-item"><a href=#Career>Career</a></li>
+          <li class="nav-item"><a href=#Blog>Blog</a></li>
+          <li class="nav-item"><a href=#ContactUS>Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <section id="Showcase">
 
-    <!-- !!IMP select the right video -->
+    <!-- !! select the right video -->
     <video class="background-video" src="./assets/img/home.mp4" autoplay muted loop></video>
 
-    <div class="overlay"></div>
+    <!-- <div class="overlay"></div> -->
     <div class="header-content">
       <img src="./assets/gtxlogo.png" alt="GTX" class="gtx-Logo-header">
-      <h3 class="openingHeading">Headquartered in Australia, Global Travel Xperts (GTX) has a diversified portfolio in
+      <h1 class="openingHeading">Headquartered in Australia, Global Travel Xperts (GTX) has a diversified portfolio in
         travel-related
         services. Our core business is creating a full suite of up market, ROI-driven, highly customized, strategic
         travel-related services for our clients spread out across the globe.
-      </h3>
+      </h1>
     </div>
   </section>
 
-  <nav id="navbar">
-    <img src="./assets/gtxlogo.png" alt="GTX" class="gtx-Logo">
-    <i class="nav-dropdown fa-sharp fa-solid fa-caret-down"></i>
-    <ul class="nav_title">
-      <li class="nav_list--active"><a href=#>Home</a></li>
-      <li><a href=#AboutUs>About Us</a> </li>
-      <li><a href=#links>Career</a></li>
-      <li><a href=#links>Blog</a></li>
-      <li class="highlighted">Contact Us</li>
-    </ul>
-  </nav>
+
   <section id="OurBrands">
     <h1>Our Brands</h1>
-    <div class="brand-container-wrapper">
-      <div class="brand-container">
-        <a href="https://gauratravel.com.au/">
-          <div class="brandlogo-wrapper"><img class="ourBrandLogo" src="./assets/img/Logo/Branches/GauraTravel_logo.png"
-              alt="GauraTravel">
-          </div>
-        </a>
-        <p>provide flights from Australia to India and India to Australia
-        </p>
-      </div>
-      <div class="brand-container">
-        <a href="https://turtledownunder.com.au/">
-          <div class="brandlogo-wrapper">
-            <img class="ourBrandLogo" src="./assets/img/Logo/Branches/TurtleTravel_Downunder_Logo.png"
-              alt="TurtleTravel_Downunder">
-          </div>
-        </a>
-        <p>provide Australian travel packages to travel agents and businesses
-        </p>
-      </div>
-      <div class="brand-container">
-        <a href="https://flylanka.com.au/">
-          <div class="brandlogo-wrapper"><img class="ourBrandLogo" src="./assets/img/Logo/Branches/FlyLanka_Logo.png"
-              alt="FlyLanka">
-          </div>
-        </a>
-        <p>provide flights from Australia to Sri Lanka and Sri Lanka to Australia
-        </p>
-      </div>
-      <div class="brand-container">
-        <a href="https://iflynow.com.au/">
-          <div class="brandlogo-wrapper"><img class="ourBrandLogo" src="./assets/img/Logo/Branches/iFlyNow_IconLogo.png"
-              alt="iFlyNow">
-          </div>
-        </a>
-        <p>provide flights from India to Australia and New Zealand, Thailand, Sri Lanka, Indonesia, Maldives, Singapore,
-          Malaysia, Dubai, UK, Europe, USA, London and Canada.</p>
+    <div class="brand-container-wrapper container">
+      <div class="row">
+        <div class="brand-container col-xl-3 col-lg-6 col-md-12">
+          <a href="https://gauratravel.com.au/">
+            <div class="brandlogo-wrapper"><img class="ourBrandLogo"
+                src="./assets/img/Logo/Branches/GauraTravel_logo.png" alt="GauraTravel">
+            </div>
+            <p class="brand__detail">Provide flights from Australia to India and India to Australia
+            </p>
+          </a>
+
+        </div>
+        <div class="brand-container col-xl-3 col-lg-6 col-md-4">
+          <a href="https://turtledownunder.com.au/">
+            <div class="brandlogo-wrapper">
+              <img class="ourBrandLogo" src="./assets/img/Logo/Branches/TurtleTravel_Downunder_Logo.png"
+                alt="TurtleTravel_Downunder">
+            </div>
+            <p class="brand__detail">Provide Australian travel packages to travel agents and businesses
+            </p>
+          </a>
+
+        </div>
+        <div class="brand-container col-xl-3 col-lg-6 col-md-4 ">
+          <a href="https://iflynow.com.au/">
+            <div class="brandlogo-wrapper"><img class="ourBrandLogo"
+                src="./assets/img/Logo/Branches/iFlyNow_IconLogo.png" alt="iFlyNow">
+            </div>
+
+          </a>
+          <p class="brand__detail">Provide flights from India.</p>
+        </div>
+        <div class="brand-container col-xl-3 col-lg-6 col-md-4 ">
+          <a href="https://flylanka.com.au/">
+            <div class="brandlogo-wrapper"><img class="ourBrandLogo" src="./assets/img/Logo/Branches/FlyLanka_Logo.png"
+                alt="FlyLanka">
+            </div>
+            <p class="brand__detail">Provide flights from Australia to Sri Lanka and Sri Lanka to Australia
+            </p>
+          </a>
+
+        </div>
       </div>
     </div>
   </section>
   <section id="AboutUs"></section>
   <section id="Career">
-    <div id="testimonials">
-      <div class="container-testimonials">
-        <div id="testimonials-carousel-container" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <h2 class="testimonial-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis dictum magna, sed sagittis augue
-                finibus in. Aliquam erat volutpat. Cras vel scelerisque nulla. Vivamus lobortis augue ut ligula tempor..
-              </h2>
-              <img class="img-testimonials" src="./assets/img/employee/person1.jpg" alt="employeeName" />
-              <em>Name, Sales & Account</em>
+
+
+    <div id="testimonials-carousel-container" class="container-testimonials carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="t-img-c col-3">
+              <img class="img-testimonials" src="./assets/img/employee/person1.jpg" alt="employeeName">
             </div>
-            <div class="carousel-item">
-              <h2 class="testimonial-text">
+            <div class="d-flex align-items-start flex-column  col-8">
+              <em class="testimonial-text">"
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis dictum magna, sed sagittis augue
-                finibus in. Aliquam erat volutpat. Cras vel scelerisque nulla. Vivamus lobortis augue ut ligula tempor.
-              </h2>
-              <img class="img-testimonials" src="./assets/img/employee/person2.jpg" alt="employeeName2" />
-              <em>Name2, Department2</em>
-            </div>
-            <div class="carousel-item">
-              <h2 class="testimonial-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis dictum magna, sed sagittis augue
-                finibus in. Aliquam erat volutpat. Cras vel scelerisque nulla. Vivamus lobortis augue ut ligula tempor.
-              </h2>
-              <img class="img-testimonials" src="./assets/img/employee/person3.jpg" alt="employeeName2" />
-              <em>Name3, Departmen3t</em>
+                finibus in. Aliquam erat volutpat. Cras vel scelerisque nulla. Vivamus lobortis augue ut ligula tempor.."
+              </em>
+              <div class="t-employee mt-auto mb-5"><em>Name, Sales &amp; Account</em></div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel-container"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel-container"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-
-        <!--  -->
+        <div class="carousel-item ">
+          <div class="row">
+            <div class="t-img-c col-3">
+              <img class="img-testimonials" src="./assets/img/employee/person2.jpg" alt="employeeName">
+            </div>
+            <div class="d-flex align-items-start flex-column  col-8">
+              <em class="testimonial-text">"
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis dictum magna, sed sagittis augue
+                finibus in. Aliquam erat volutpat. Cras vel scelerisque nulla. Vivamus lobortis augue ut ligula tempor.."
+              </em>
+              <div class="t-employee mt-auto mb-5"><em>Name, Sales &amp; Account</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="row">
+            <div class="t-img-c col-3">
+              <img class="img-testimonials" src="./assets/img/employee/person3.jpg" alt="employeeName">
+            </div>
+            <div class="d-flex align-items-start flex-column pt-3 col-8">
+              <em class="testimonial-text ">"
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis dictum magna, sed sagittis augue
+                finibus in. Aliquam erat volutpat. Cras vel scelerisque nulla. Vivamus lobortis augue ut ligula tempor.."
+              </em>
+              <div class="t-employee mt-auto mb-5"><em>Name, Sales &amp; Account</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="row">
+            <div class="t-img-c col-3">
+              <img class="img-testimonials" src="./assets/img/employee/person2.jpg" alt="employeeName">
+            </div>
+            <div class="d-flex align-items-start flex-column  col-8">
+              <em class="testimonial-text">"
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis dictum magna, sed sagittis augue
+                finibus in. Aliquam erat volutpat. Cras vel scelerisque nulla. Vivamus lobortis augue ut ligula tempor.."
+              </em>
+              <div class="t-employee mt-auto mb-5"><em>Name, Sales &amp; Account</em></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="carousel-item">
+            <h2 class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis dictum magna, sed sagittis augue
+              finibus in. Aliquam erat volutpat. Cras vel scelerisque nulla. Vivamus lobortis augue ut ligula tempor.
+            </h2>
+            <img class="img-testimonials" src="./assets/img/employee/person2.jpg" alt="employeeName2">
+            <em>Name2, Department2</em>
+          </div>
+          <div class="carousel-item active">
+            <h2 class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis dictum magna, sed sagittis augue
+              finibus in. Aliquam erat volutpat. Cras vel scelerisque nulla. Vivamus lobortis augue ut ligula tempor.
+            </h2>
+            <img class="img-testimonials" src="./assets/img/employee/person3.jpg" alt="employeeName2">
+            <em>Name3, Departmen3t</em>
+          </div> -->
       </div>
+      <button class="t-btn carousel-control-prev" type="button" data-bs-target="#testimonials-carousel-container"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="t-btn carousel-control-next" type="button" data-bs-target="#testimonials-carousel-container"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </section>
   <section id="ContactUs">

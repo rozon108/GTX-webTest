@@ -43,15 +43,7 @@ p {
   font-weight: 400;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #242424;
-  mix-blend-mode: overlay;
-}
+
 
 section {
   padding-block-end: 1rem;
@@ -60,67 +52,40 @@ section {
 /* Start of custom CSS Style */
 /* HEADER */
 
-
 /* Nav Bar */
-#navbar {
-  background-color: #fff;
-  /* position: fixed; */
-  /* Make it stick/fixed */
-  /* top: 0; */
-  /* Stay on top */
-  width: 100%;
-  /* Full width */
-  transition: top 0.3s;
-  /* Transition effect when sliding down (and up) */
-  padding: 1rem;
+
+.gtx-small {
+  display: none;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 2;
+@media (max-width: 425px) {
+  .gtx-small {
+    display: block;
+  }
+
+  .gtx-Logo {
+    display: none;
+  }
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.custom-nav {
+  padding: 1rem 1.75rem;
 }
 
-.sticky {
-  padding-top: 60px;
+.navbar--link {
+  column-gap: 2vmin;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 1rem;
 }
 
-nav img {
-  height: 3rem;
-}
-
-.nav-dropdown {
-  display: none !important;
-  margin: 1rem;
-}
-
-.nav_title {
-  display: flex;
-  gap: 1rem;
-}
-
-.nav_title li {
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.nav_list--active {
+.nav-item a {
+  text-decoration: none;
+  font-size: 26px;
   color: var(--secondary-color);
+  font-weight: 700;
+  letter-spacing: 1px;
 }
-
-.highlighted {
-  color: var(--secondary-dark-color);
-  text-decoration: underline;
-
-}
-
 
 /* End of Nav Bar */
 
@@ -139,9 +104,8 @@ nav img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  opacity: 0.25;
   z-index: -1;
-
+  filter: brightness(0.5);
 }
 
 .header-content {
@@ -151,7 +115,9 @@ nav img {
   text-align: center;
   top: 42%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -25%);
+  color: #fff;
+  font-size: 2rem;
 }
 
 .gtx-Logo-header {
@@ -160,64 +126,75 @@ nav img {
 
 
 
-#ContactUs {}
 
 /* OUR BRANDS Section */
 /* all the classes in order #OurBrands .brand-container-wrapper .brand-container brandlogo-wrapper .ourBrandLogo */
 #OurBrands {
   text-align: center;
+  padding: 2rem 3rem 8vh;
 }
 
-.brand-container-wrapper {
-  display: flex;
-  gap: 2rem;
-  margin: 0 2rem;
+.brand-container {
+  position: relative;
+  padding: 4vmin 4vmin;
+  text-align: center;
 }
 
 .brandlogo-wrapper {
   height: 75px;
-  width: auto;
-
 }
 
 .ourBrandLogo {
   height: inherit;
-}
-
-.brand-container-wrapper {
-  display: inline-grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-
+  max-width: 60vw;
 }
 
 /* End of our brand section */
 
 /* Testimonials */
-#testimonials {
-  background-color: var(--secondary-color);
-
+.container-testimonials {
+  background-color: var(--secondary-dark-color);
   color: white;
+  text-align: center;
+  padding: 0rem 3rem;
 }
 
-.container-testimonials {
-  text-align: center;
+.t-btn {
+  justify-content: center;
+  width: 3%;
+  opacity: 1;
+}
+
+/* 
+
+.carousel-item img{
+  width:30vw;
+  height: 100%;
+}
+
+.t-details{
+  padding: 1rem 3rem;
+} */
+
+.t-img-c {
+  height:35vh
 }
 
 .testimonial-text {
-  font-size: 3 rem;
-  line-height: 1.5;
+  font-size: 2.55vw;
+  text-align: justify;
+}
+.t-employee{
+  font-size: 1.25rem;
 }
 
 .img-testimonials {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
-div#testimonials-carousel-container {
-  padding: 2% 5%;
-}
 
 /* End of Testimonials */
 
@@ -303,6 +280,36 @@ footer {
     grid-row: 1;
     padding: 2rem 0 0 3rem;
   }
+
+  /* #OurBrands{
+    background-color: #000;
+  } */
+
+  .brand-container p {
+    display: none;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 0%;
+    margin: 1rem 1rem auto;
+    color: #000;
+    transition: all .3s;
+    font-weight: 500;
+
+  }
+
+  .brand-container:hover .brandlogo-wrapper img {
+    filter: grayscale(100%);
+    object-fit: fill;
+    transform: scale(0.5);
+
+  }
+
+
+
+  .brand-container:hover .brand__detail {
+    display: block;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -310,7 +317,7 @@ footer {
   /* .nav-dropdown {
     display: block !important;
   } */
- 
+
   .nav_title {
     display: none;
   }
@@ -319,12 +326,7 @@ footer {
     display: none;
   }
 
-  .brand-container-wrapper {
-    display: inline-grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
 
-  }
 
   .HQ {
     display: flex;
@@ -374,13 +376,9 @@ footer {
     margin-inline: 0;
   }
 
-  .brand-container-wrapper {
-    display: block;
-  }
 
-  .brand-container {
-    margin-block-end: 0.5rem;
-  }
+
+
 
 }
 
