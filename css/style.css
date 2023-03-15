@@ -379,6 +379,10 @@ footer {
     overflow-wrap: break-word;
   }
 
+  .t-img-c{
+    height: 40vmin;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -387,10 +391,10 @@ footer {
   }
 
   footer {
-    padding-inline: 0.5rem;
+    padding-inline: 1.75rem;
     padding-block: 1.5rem;
-    display: grid;
-    justify-content: center
+    display: flex;
+    justify-content: space-between;
   }
 
   .social-media__list {
@@ -402,6 +406,10 @@ footer {
   /* .hq1 {
     margin-inline: 0;
   } */
+  .t-img-c{
+    height: 62vmin;
+  }
+
 
   .testimonial-text{
     padding-top: 0.5rem;
