@@ -1,0 +1,81 @@
+.heading-career img {
+    height: 245px;
+    width: 100%;
+    object-fit: cover;
+}
+.heading-career{
+    position: relative;
+}
+
+.heading-career h1 {
+    /* Career at GTX */
+    position: absolute;
+    text-shadow: -14px 8px 4px rgba(0, 0, 0, 0.25);
+    bottom: 3%;
+    left: 4%;
+
+}
+.heading-title{
+    width: 90%;
+    margin: 2rem auto;
+}
+
+
+.opening-Job {
+    width: 90%;
+    margin: 2rem auto 2rem;
+}
+
+.job-wrapper {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    justify-content: space-around;
+}
+
+.job {
+    background-color: cadetblue;
+    padding: 2rem;
+    width: 45%;
+    border-radius: 12px;
+}
+
+.job h2 {
+    font-weight: 600;
+}
+
+.job-location {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+@media (min-width:769px) {
+    .heading-title{
+        display: flex;
+        column-gap: 2rem;
+        height: 10rem;
+        align-items: center;
+
+    }
+.heading-title h1{
+    width: 31%;
+    
+}
+
+.heading-title p{
+    width: 60%;
+}
+
+}
+
+@media (max-width: 425px) {
+    .job {
+        padding: 1rem;
+        width: 100%;
+
+    }
+
+}

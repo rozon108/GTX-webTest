@@ -10,10 +10,10 @@ $(function () {
         $.each(data.gtxHQ, (i, hq) => {
             console.log(hq);
             var hqInfo = `<div class="hq-container hq${hq.key_id}">
-                                <h5>${hq.name}</h5>
-                                <span>${hq.address}</span>
-                                <span>${hq.phone}</span>
-                                <span>${hq.email}</span>
+                                <h2>${hq.name}</h2>
+                                <h3>${hq.address}</h3>
+                                <h3>${hq.phone}</h3>
+                                <h3><a href="mailto: ${hq.email}">E-mail</a></h3>
                              </div>`;
             $(hqInfo).appendTo(".HQ");
         })
